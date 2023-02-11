@@ -1,0 +1,59 @@
+Git Komutlari
+
+
+   git config --global user.name  : komutu globaldaki adını oluşturur.
+   git config --global user.email : komutu globaldaki email oluşturur.
+   git config --list              : komutu globaldaki oluşturduğun adını ve email adresini gösterir.
+   git init 			  : komutu sıfırdan yeni bir yerel depo oluşturun.
+   git status                     : komutu henüz işlenmemiş yeni veya değiştirilmiş dosyaları listeler.
+   git add main.txt               : komutu yeni ve degismis dosyalari tek tek güncellemek için kullanılır.
+   git add .                      : komutu yeni ve degismis dosyalarin hepsini bir anda eklemek için kullanılır.
+   git add -u                     : komutu silinmis ve degistirilmis dosyalari güncellemek için kullanılır.
+   git commit -m 'komut mesajı'   : komutu değişikleri depoya kayıt eder.
+   git commit -a -m 'komut mesajı': komutu tüm değisiklikleri depoya kayıt eder.
+   git log                        : komutu tüm değişiklik geçmişini gösterir.
+   git diff /Commit'in IDsi/ /ComID/ : komutu iki commit arasındaki farklırı gösterir.	
+   git diff --cached              : komutu listeye eklenen değişiklikler arasındaki farkları gösterir.
+   git clone /githubadresi/       : komutu uzaktaki depoyu klonlar.
+   git pull                       : komutu uzak depodaki son degisiklikleri yerel çalışma deposuna çeker.
+   git push origin master         : komutu yerel depodaki degisiklikleri uzak depoda uygular (origin master)komutuda eklenebilir.s
+   git branch   /branch adı/      : komutu branch oluşturur.
+   git branch                     : komutu bulunan branchleri listeler.
+   git branch -r                  : komutu remote branchleri görelibiriz.
+   git switch /branch adı/        : komutu brachleri değiştirir.
+   git checkout /branch adı/      : komutu brachleri değiştirir.  
+   git merge /branch adı/         : komutu branchleri birleştirir.
+   git branch -d /branch adı/     : komutu istenilen branch silmek için.
+   git --version                  : komutu git versiyon numarasını gösterir.
+   git --help                     : komutu git yardım sayfasını gösterir. 
+   git remote add origin          : komutu yerel dizini uzak bir dizine bağlanmasında kullanılır.
+   git remote -v                  : komutu uzak dizinlerin listesini gösterir.
+   git log --since='zamanaralığı' : komutu iki zaman araligindaki commitleri gösterir.
+   git shortlog -s                : komutu commit yapanlarin isim ve commit sayilarini gösterir.
+   git shortlog -e                : komutu commit yapanlarin isim ve E-postalarini gösterir.
+   git shortlog -n                : komutu commit yapanlari commit sayisina gore sıralar. 
+   git reset -- hard HEAD         : komutu son yapılan değişiklikleri iptal ederek HEAD geri döner.
+   git checkout /ComID/           : komutu sadece bir dosyayı depodaki haline geri getirir.
+   git revert HEAD                : komutu son yapilan commiti geri al
+   git stash                      : komutu commit yapilmamis degisiklikleri kaydet
+   git stash pop                  : komutu commit yapilmamis degisikliklere geri don
+   git stash list                 : komutu commit yapilmamis degisiklikleri listele
+   git stash drop                 : komutu commit yapilmamis degisiklikleri kaldır
+   git grep                       : komutu mevcut dal icersinde kelime veya ifade arama
+   git rm  main.txt               : komutu belirtiğimiz bir dosyayı çalışma dizininden siler.
+   git rm -f                      : komutu belirtiğimiz bir dosyayı çalışma dizininden zorla siler.
+   cat .gitignore                 : komutu git'e projenizi GitHub deposuna gönderirken hangi dosyaların yoksayılacağını söyler. gitignore deponuzun kök dizininde bulunur.
+   git rm --cached main.txt       : komutu dosyaları yerel git deponuzdan kaldırın.
+   git fsck                       : komutu git dosya sisteminin bütünlüğünü kontrol etmek için kullanılır ve ayrıca bozuk nesnelerin belirlenmesine yardımcı olur.
+   rm -rf .git                    : komutu git init ile oluşturulan repoyu siler tamamen.
+   gitk                           : komutu git görselleştirme programi.
+   cd                             : komutu klasör değiştir manasına gelir. Terminal içerisinde kendimizi navigete etmemizi sağlar. Özet olarak gezme işlemi de denebilir.
+   pwd                            : komutu nerede olduğumuzu anlamak için kullanırız. Güncel olarak bulunduğumuz klasörü gösterir.
+   ls                             : komutu içerisinde bulunduğumuz klasör ve dökümanları göster manasına gelir.
+   ls la                          : komutu gizli klasörleri de gösterir.
+   cd ..                          : komutubir önceki klasöre geliriz.
+   clear                          : komutu terminali temizler.
+   mkdir                          : komutu klasör oluştur anlamına gelir. 
+   touch                          : komutu dosya oluşturmamızı sağlar. (touch index.html).
+   rm                             : komutu remove yani kaldır manasına gelir. Sadece dosyaları siler. (rm index.html).
+   rm -rf                         : komutu direkt klasörü siler. (rm -rf GitLearn).
